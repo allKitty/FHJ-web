@@ -1,0 +1,133 @@
+body{
+	font-size:14px;
+	margin:0;
+    padding:0;
+}
+.big-head{
+	width: 100%;
+	height: 200px;
+	background-color: #3F51B5;
+}
+.logo{
+	width: 120px;
+	margin: 0 auto;
+}
+.logo img{
+	width: 120px;
+	height: 120px;
+	margin-top: 30px;
+}
+.head-text{
+	color: white;
+	font-weight: 400px;
+	text-align: center;
+	margin-top:10px ;
+}
+.min-bt{
+	/*width: 1200px;*/
+	height: 45px;
+	background-color: #3A4AA7;
+	/*margin:0 auto;*/
+}
+.bt-ul{
+	width:100%;
+	margin:0 auto;
+	background-color: #3A4AA7;
+}
+.bt-border li{
+	line-height: 40px;
+	color: lightgray;
+	font-size: 14px;
+    font-weight: 400px;
+    width:200px;
+    margin:0 auto;
+    list-style: none;
+    /*display: inline;*/
+    float: left;
+    margin-left:100px;
+    /*margin-top:10px;*/
+}
+.bt-border{
+	width:1200px;
+	margin: 0 auto;
+}
+/*内容*/
+.big-img-border{
+	width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.big-img-border>div{
+	margin:0px 10px 10px 0;
+    width:284px;
+    background:#fff;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+.min-border {
+    margin: 8px;
+    width: 284px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.b-img{
+	width: 100%;
+    height: auto;
+}
+.big-body{
+	width:287px;
+	/*height:122px;*/
+	position:relative;
+}
+.big-t{
+	font-size: 24px;
+    font-weight: 450;
+    line-height: normal;
+    padding: 20px 16px 0;
+}
+.big-body p{
+	color: rgba(0,0,0,.54);
+    font-size: 1rem;
+    line-height: 18px;
+    padding:0 16px;
+    width: 90%;
+}
+.big-body p:hover{
+	color: rgba(0,0,0,.54);
+    font-size: 1rem;
+    line-height: 18px;
+    padding:0 16px;
+    width: 90%;
+    color: palevioletred;
+}
+.body-a {
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 13px 8px 17px 16px;
+    width: auto;
+    margin-top:12px;
+}
+.min-border a {
+    color: rgb(255,64,129);
+    font-weight: bolder;
+}
+/*底部*/
+.foot {
+	text-align: center;
+    padding: 32px 16px;
+    color: #9e9e9e;
+    background-color: #424242;
+}
+.foot p{
+    color: #fff;
+    display: inline;
+}
+.foot-text-one {
+    color: #fff;
+    margin-right: 15px;
+    border-bottom: 1px dotted #aaa;
+}
+.foot-text-two {
+    color: rgb(150,150,150);
+}
