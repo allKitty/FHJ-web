@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+	</head>
+	<body>
+		用户名：<input type="text" id="in1" placeholder="请输入用户名"/>
+		<span id="span"></span>
+		<br />
+		密码：<input type="password" id="in2" placeholder="设置的密码要6位数以上" />
+		<span id="span1"></span>
+		<br />
+		<button id="btn">提交</button>
+		<script>
+			var in1 = document.getElementById('in1');
+			var in2 = document.getElementById('in2');
+			var btn = document.getElementById('btn');
+			var Name = ['tom','jack','lili'];
+
+            in1.onblur = function(){
+			   if(in1.value==''){
+				    span.innerHTML = '用户名不能为空';
+				}else if(Name.indexOf(in1.value)!=-1){
+					span.innerHTML = '用户名重复';
+				}else{
+					span.innerHTML = '用户名可用';
+				}
+			}
+			in2.onblur = function(){
+				if(in2.value==''){
+					span1.innerText = '请输入密码';
+				}else if(in2.value.length<6){
+					span1.innerText = '设置的密码要大于6位数';
+				}else{
+					span1.innerHTML = '';
+				}
+			}
+			btn.onclick=function(){
+				if(in1.value==''){
+					span.innerHTML = '用户名不能为空';
+				}else if(Name.indexOf(in1.value) !=-1){
+					span.innerHTML = '用户名重复';
+				}else if(in2.value==''){
+					span1.innerHTML = '密码不能为空';
+				}else if(in2.value.length<6){
+					span1.innerText = '设置的密码要大于6位数';
+				}else{
+					alert('注册成功');
+				}
+			}
+			
+			
+			
+		</script>
+	</body>
+<ml>
