@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .b{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="dl" class="a"></div>
+    <button id="btn"><tton>
+    <script>
+        var dl = document.getElementById('dl');
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            dl.className = 'b';
+        }
+    </script>
+</body>
+<ml>

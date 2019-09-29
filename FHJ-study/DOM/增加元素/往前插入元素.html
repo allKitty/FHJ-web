@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>往前插入元素</title>
+</head>
+<body>
+    <ul id="ul">
+        <li id="pg">苹果</li>
+        <li id="pt">葡萄</li>
+        <li>树莓</li>
+    </ul>
+    <script>
+         var ul = document.getElementById("ul");
+         //获取苹果
+         var pg = document.getElementById('pg');
+         var li = document.createElement('li');
+        //在父级中插入一个元素(插入元素,在谁前面)
+        //插在苹果前面
+         ul.insertBefore(li,pg);
+        //插在葡萄前面(也就是苹果和葡萄中间)
+        //  ul.insertBefore(li,pt);
+         var c = document.createTextNode('草莓');
+         li.appendChild(c);
+    </script>
+</body>
+</html>

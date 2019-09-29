@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用类名获取元素</title>
+</head>
+<body>
+    <ul id="ul">
+        <li class="a">1</li>
+        <li class="a">2</li>
+        <li class="b">3</li>
+        <li id="c">4</li>
+    </ul>
+    <script>
+         var a = document.getElementsByClassName('a');
+         console.log(a);
+
+         var c = document.querySelector('#c');//性能差一些
+         console.log(c);
+         
+         var ul = document.getElementById('ul');
+         var x = document.querySelector('ul>li');
+        console.log(x);  //不适用
+
+    </script>
+</body>
+</html>

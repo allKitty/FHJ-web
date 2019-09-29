@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .b{
+       background-color: blue;
+    }
+    .l{
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+    var div = document.getElementsByTagName('div');
+    for(var a=0;a<div.length;a++){
+       div[a].style.width="50px";
+       div[a].style.height="50px";
+       div[a].className="";
+       div[a].style.margin="20px";
+       div[a].style.display="inline";
+    }
+
+    div[2].className='b';
+
+    </script>
+</body>
+</html>
